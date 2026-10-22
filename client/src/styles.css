@@ -7,3 +7,77 @@
 @media(max-width:760px){.topbar{height:62px;padding:0 15px}.breadcrumb{font-size:10px}.topbar-actions{gap:8px}.global-search{width:36px;padding:0;justify-content:center;border-color:transparent;background:transparent}.global-search input,.global-search kbd{display:none}.language-btn{min-width:34px;padding:0 7px}.profile-info,.profile-button>svg{display:none}.profile-avatar{width:31px;height:31px}.content-wrap{padding:22px 15px 12px}.page-heading{align-items:flex-start;gap:12px;margin-bottom:19px}.page-heading h1{font-size:23px}.page-heading p{font-size:10px;line-height:1.6;max-width:420px}.date-line{font-size:8px;flex-wrap:wrap;line-height:1.5}.heading-actions{flex-direction:column;gap:7px}.heading-actions .btn{padding:9px 10px;font-size:9px}.weather-banner{padding:16px;gap:12px}.weather-banner-icon{width:44px;height:44px}.weather-banner-copy{min-width:calc(100% - 60px)}.weather-banner-copy h3{font-size:13px}.weather-banner-copy p{font-size:9px}.banner-weather-stats{margin:2px 0 0;width:100%;justify-content:space-around;gap:5px}.banner-weather-stats>div{min-width:0}.banner-link{margin-left:0;padding:7px 0}.weather-banner:after{right:-30px}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.stat-card{padding:12px}.stat-top{margin-bottom:10px}.stat-value{font-size:23px}.stat-foot{font-size:8px}.dashboard-grid,.main-grid,.lower-grid{grid-template-columns:1fr;gap:12px;margin-bottom:19px}.crop-panel,.soil-panel,.chart-panel,.activity-panel{padding:16px 15px 0}.panel-header h3{font-size:14px}.section-title{margin:23px 0 13px;align-items:flex-end}.section-title h2{font-size:17px}.section-title p{font-size:9px;line-height:1.5}.text-link{font-size:9px}.farm-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.farm-card-cover{height:78px}.farm-card-content{padding:10px}.farm-card-content h3{font-size:11px}.farm-card-stats{gap:9px 4px}.farm-card-stats strong{font-size:8px}.farm-add-card{min-height:165px;padding:10px}.tip-banner{align-items:flex-start;padding:13px;gap:10px}.tip-banner strong{font-size:10px;line-height:1.5}.tip-banner p{font-size:9px}.tip-banner button{font-size:9px;align-self:center}.app-footer{flex-wrap:wrap;justify-content:flex-start;gap:10px;padding-top:15px}.app-footer>span{margin-left:auto}.app-footer>div:nth-child(2){order:3;width:100%}.page-callout{align-items:flex-start;padding:13px;gap:10px;flex-wrap:wrap}.page-callout p{font-size:9px}.page-callout>.badge{margin-left:49px}.farms-page-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.farm-add-tall{min-height:200px}.compact-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.compact-stats .stat-card{padding:10px}.compact-stats .stat-value{font-size:19px}.compact-stats .stat-note{font-size:8px;line-height:1.4}.compact-stats .stat-foot{display:none}.crop-management-card{padding:12px;gap:10px;align-items:flex-start}.crop-thumb.large{width:48px;height:48px}.crop-management-main .crop-name-line{flex-wrap:wrap;justify-content:flex-start}.crop-name-line h3{font-size:12px}.crop-name-line .badge{margin-left:0}.crop-management-main>p{font-size:9px;line-height:1.5}.crop-management-meta{gap:8px;flex-wrap:wrap}.crop-management-meta span{font-size:8px}.soil-page-grid,.weather-page-top{grid-template-columns:1fr;gap:12px}.soil-form-panel,.soil-result-panel,.current-weather-panel,.location-panel{padding:15px}.knowledge-strip{align-items:flex-start;padding:13px;gap:9px}.knowledge-strip p{line-height:1.5}.forecast-grid{grid-template-columns:repeat(5,minmax(83px,1fr));overflow-x:auto;padding-bottom:4px}.forecast-card{padding:12px 8px}.filter-row{align-items:flex-start;flex-direction:column;gap:9px}.filter-tabs{max-width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}.filter-tabs button{padding:8px 9px;font-size:9px}.alert-card{padding:13px;gap:10px}.alert-symbol{width:34px;height:34px}.alert-title-row h3{font-size:12px}.alert-content>p{font-size:9px}.assistant-layout,.community-layout{grid-template-columns:1fr}.assistant-main{min-height:560px}.assistant-side{display:grid;grid-template-columns:1fr 1fr}.assistant-side .panel{padding:14px}.context-list{gap:9px}.community-banner{align-items:flex-start;flex-wrap:wrap;padding:15px}.community-banner>div:nth-child(2){min-width:calc(100% - 65px)}.community-banner h2{font-size:14px}.community-banner>.btn{margin-left:56px}.community-sidebar{display:grid;grid-template-columns:1fr 1fr}.learning-hero{padding:18px;gap:12px}.learning-hero-icon{width:45px;height:45px}.learning-hero h2{font-size:18px}.learning-hero p{font-size:9px;line-height:1.6}.learning-grid{gap:10px}.learning-image{height:100px}.learning-card-body{padding:11px}.learning-card-meta{align-items:flex-start;flex-direction:column;gap:5px}.learning-card h3{font-size:11px;min-height:50px}.learning-card p{font-size:9px;min-height:66px}.learning-card-meta>span{font-size:7px}.learning-card .text-link{font-size:9px}.settings-layout{grid-template-columns:1fr}.settings-nav{display:flex;align-items:center;gap:3px;overflow-x:auto;padding:8px}.settings-nav h3{display:none}.settings-nav button{white-space:nowrap;width:auto;flex-shrink:0}.settings-nav button svg:last-child{display:none}.settings-panel{padding:15px}.language-options{grid-template-columns:1fr}.market-hero{grid-template-columns:1fr;min-height:0}.market-hero-copy{padding:22px}.market-hero-copy h2{font-size:25px}.market-art{min-height:150px}.market-product-illustration{right:calc(50% - 20px);top:25px;transform:scale(.8)}.circle-a{right:calc(50% - 100px);top:-25px}.circle-b{right:calc(50% - 70px);top:7px}.market-art-label{right:15px;bottom:15px}.market-tools{align-items:flex-start}.market-categories{flex:1}.cart-summary{padding:8px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-art{height:118px}.product-card-body{padding:11px}.product-card-body h3{font-size:11px;min-height:31px}.product-buy-row{align-items:flex-end}.product-buy-row strong{font-size:12px}.product-buy-row button{padding:7px}.product-buy-row button span{display:none}.expert-grid{grid-template-columns:1fr}.expert-about{min-height:0}.expert-card{padding:15px}.community-sidebar{grid-template-columns:1fr}.settings-panel .form-grid{grid-template-columns:1fr}.settings-panel .full-field{grid-column:auto}.modal-card{padding:19px}.modal-header h2{font-size:19px}.form-grid{gap:12px}.modal-form{grid-template-columns:1fr}.modal-form .full-field{grid-column:auto}.modal-actions{grid-column:auto}.toast{bottom:14px;right:12px}.profile-menu{right:-3px}.app-footer{font-size:8px}}
 @media(max-width:420px){.topbar{padding:0 11px}.topbar-actions{gap:5px}.breadcrumb{gap:5px}.breadcrumb>span{display:none}.content-wrap{padding-left:11px;padding-right:11px}.page-heading h1{font-size:21px}.heading-actions .btn{font-size:8px;padding:8px}.farm-cards,.farms-page-grid{grid-template-columns:1fr 1fr}.farm-card-cover{height:72px}.farm-card-stats{grid-template-columns:1fr 1fr}.farm-card-stats>div:last-child{grid-column:1/-1}.farm-add-card{min-height:160px}.compact-stats{grid-template-columns:1fr 1fr}.compact-stats .stat-card:last-child{grid-column:1/-1}.product-grid{grid-template-columns:1fr 1fr}.market-hero-copy h2{font-size:23px}.market-hero-copy{padding:18px}.community-banner>.btn{margin-left:0}.learning-grid{grid-template-columns:1fr}.learning-image{height:125px}.learning-card h3,.learning-card p{min-height:0}.learning-card-meta{flex-direction:row}.assistant-side{grid-template-columns:1fr}.soil-page-grid{grid-template-columns:minmax(0,1fr)}.form-grid{grid-template-columns:1fr}.form-grid .full-field{grid-column:auto}.weather-metrics{grid-template-columns:repeat(2,1fr);row-gap:15px}.banner-weather-stats{justify-content:space-between}.app-footer>span{margin-left:0}.post-actions{gap:10px}.post-actions button{font-size:8px}.profile-avatar{width:29px;height:29px}.icon-button{min-width:32px;height:32px}.global-search{width:30px}.language-btn{min-width:30px}.page-callout>.badge{margin-left:0}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* Agri-Tech UI refresh — premium, calm, field-first visual system */
+:root{
+  --green:#174d32;--green2:#287347;--leaf:#a6c95b;--bg:#f6f7f1;--muted:#657267;--line:#e4e8df;
+  --shadow-soft:0 8px 26px rgba(27,55,34,.055);--shadow-hover:0 16px 34px rgba(27,55,34,.10);
+  color:#1d2c22;background:var(--bg);font-family:'DM Sans',Inter,system-ui,sans-serif;
+}
+body{background:linear-gradient(145deg,#f8f9f4 0%,#f2f5ee 100%);color:#1d2c22}
+.sidebar{background:rgba(255,255,255,.96);border-right:1px solid #e5e9e1;box-shadow:5px 0 24px rgba(31,58,37,.025);padding-top:26px}
+.brand-mark{background:linear-gradient(145deg,#1d6440,#103f2a);border-radius:14px;box-shadow:0 7px 16px rgba(23,77,50,.19)}
+.brand-copy strong{letter-spacing:-1.1px}
+.farm-switcher{background:#f8faf5;border-color:#e5ebdf;border-radius:13px;transition:border-color .2s,background .2s}
+.farm-switcher:hover{background:#f0f6eb;border-color:#cbdcc4}
+.nav-group{margin-bottom:22px}.nav-label{letter-spacing:1.55px;font-size:9px;color:#98a399}
+.nav-item{border-radius:10px;padding:11px 12px;gap:11px;transition:all .18s ease}
+.nav-item:hover{background:#f2f7ee;transform:translateX(2px)}
+.nav-item.active{background:linear-gradient(100deg,#eaf4e5,#f1f7ec);color:#174d32;box-shadow:inset 0 0 0 1px rgba(44,111,63,.055)}
+.nav-item.active:before{left:-15px;width:3px;background:#6eaa49}
+.help-card{background:linear-gradient(145deg,#f1f7e9,#f8faf2);border-color:#e4ecd9;border-radius:15px;padding:15px}
+.topbar{background:rgba(255,255,255,.91);backdrop-filter:blur(16px);border-bottom-color:#e6eae2;box-shadow:0 3px 15px rgba(24,48,29,.025)}
+.global-search{border-color:#e5eae1;background:#f9fbf7;border-radius:11px;transition:box-shadow .2s,border-color .2s}
+.global-search:focus-within{border-color:#9dbd91;box-shadow:0 0 0 4px rgba(109,157,90,.10)}
+.icon-button{border-color:#e5eae1;border-radius:11px;transition:all .18s}
+.icon-button:hover{background:#f4f8f0;border-color:#d2dfcb;color:#174d32}
+.profile-avatar{background:linear-gradient(135deg,#dcebd0,#c8dfb9);box-shadow:inset 0 0 0 1px rgba(34,90,48,.05)}
+.content-wrap{padding-top:34px;padding-bottom:28px}
+.page-heading{margin-bottom:27px}
+.date-line{letter-spacing:1.05px;color:#7e8b7e}
+.demo-pill{border-radius:999px;padding:4px 8px;letter-spacing:.75px;background:#fff6e3;color:#8d6b2e}
+.page-heading h1{font-size:30px;letter-spacing:-1.25px;color:#1b2d20}
+.page-heading p{font-size:13px;color:#778276;line-height:1.65}
+.btn{border-radius:10px;padding:11px 15px;font-size:11px;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-primary{background:linear-gradient(135deg,#1d6340,#174d32);box-shadow:0 5px 13px rgba(23,77,50,.15)}
+.btn-primary:hover{background:linear-gradient(135deg,#205f3d,#103f2a);box-shadow:0 8px 18px rgba(23,77,50,.20);transform:translateY(-2px)}
+.btn-outline{border-color:#dfe7da;box-shadow:0 2px 4px rgba(25,52,31,.025)}
+.btn-outline:hover{border-color:#c7d8bf;box-shadow:0 5px 12px rgba(25,52,31,.06)}
+.weather-banner{background:linear-gradient(110deg,#edf5e7 0%,#f4f7e9 58%,#f8f6e9 100%);border:1px solid #e0ead7;border-radius:18px;padding:23px 25px;box-shadow:inset 0 1px 0 rgba(255,255,255,.75);margin-bottom:20px}
+.weather-banner:after{border-color:#cfe1c4;opacity:.75}
+.weather-banner-icon{border-radius:16px;box-shadow:0 5px 14px rgba(67,104,49,.08)}
+.weather-banner-copy h3{font-size:16px;color:#243b29}
+.weather-banner-copy p{font-size:11px;line-height:1.7}
+.banner-link{padding:10px 12px;border-radius:9px;background:rgba(255,255,255,.65);transition:background .18s}
+.banner-link:hover{background:#fff}
+.stats-grid{gap:16px;margin-bottom:22px}
+.stat-card{border:1px solid #e7ebe3;border-radius:16px;padding:18px 18px 16px;box-shadow:0 3px 12px rgba(27,55,34,.025);transition:transform .22s,box-shadow .22s,border-color .22s}
+.stat-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:#d8e3d1}
+.stat-icon{width:39px;height:39px;border-radius:12px}
+.stat-value{font-size:28px;letter-spacing:-1.2px;color:#203326}
+.stat-label{font-size:11px;color:#728071}
+.stat-note{color:#8c988a}
+.panel,.crop-panel,.soil-panel,.chart-panel,.activity-panel,.expert-card,.product-card,.learning-card,.post-card,.settings-panel,.soil-form-panel,.soil-result-panel,.current-weather-panel,.location-panel{border-radius:16px;box-shadow:var(--shadow-soft);border-color:#e6eae2;background:rgba(255,255,255,.96)}
+.panel{overflow:hidden}
+.panel-header{padding-bottom:15px}
+.panel-header h3{font-size:15px;color:#24352a;letter-spacing:-.45px}
+.panel-kicker{letter-spacing:1.2px;color:#8b9888}
+.section-title{margin-top:29px;margin-bottom:16px}
+.section-title h2{font-size:20px;letter-spacing:-.7px;color:#203326}
+.section-title p{color:#7e8a7d;line-height:1.6}
+.crop-row,.activity-row,.farm-card,.alert-card,.forecast-card{transition:transform .18s,box-shadow .18s,border-color .18s}
+.crop-row:hover,.activity-row:hover{background:#f8faf5}
+.farm-card,.product-card,.learning-card,.expert-card,.post-card{overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s}
+.farm-card:hover,.product-card:hover,.learning-card:hover,.expert-card:hover,.post-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:#d7e2d0}
+.farm-card-cover{position:relative}
+.farm-card-content h3,.product-card-body h3,.learning-card h3{letter-spacing:-.35px}
+.badge{border-radius:999px}
+input,select,textarea{border-radius:10px}
+input:not([type=checkbox]):not([type=radio]),select,textarea{transition:border-color .18s,box-shadow .18s}
+input:not([type=checkbox]):not([type=radio]):focus,select:focus,textarea:focus{border-color:#9cbd91;box-shadow:0 0 0 4px rgba(109,157,90,.10);outline:none}
+.modal-card{border-radius:20px;box-shadow:0 24px 80px rgba(16,37,22,.22);border-color:#e3e9df}
+.toast{border-radius:12px;box-shadow:0 12px 35px rgba(20,43,26,.18)}
+.app-footer{color:#8a9588}
+@media(min-width:1500px){.content-wrap{padding-left:42px;padding-right:42px}.stats-grid{gap:18px}.stat-card{padding:20px}}
+@media(max-width:760px){.content-wrap{padding-top:23px}.page-heading h1{font-size:25px}.weather-banner{border-radius:15px}.stat-card{border-radius:14px}.stats-grid{gap:11px}.section-title{margin-top:24px}.panel,.crop-panel,.soil-panel,.chart-panel,.activity-panel{border-radius:14px}}
+@media(prefers-reduced-motion:reduce){.nav-item:hover,.stat-card:hover,.farm-card:hover,.product-card:hover,.learning-card:hover,.expert-card:hover,.post-card:hover{transform:none}}
