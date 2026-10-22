@@ -1,0 +1,7 @@
+import { Router } from 'express';
+import CommunityPost from '../models/CommunityPost.js';
+const router = Router();
+router.get('/posts', async (req, res, next) => { try { const filter = { status: 'published' }; if (req.query.topic) filter.topic = req.query.topic; const posts = await CommunityPost.find(filter).populate('author', 'name').sort({ createdAt: -1 }).limit(50); res.json({ posts }); } catch (e) { next(e); } });
+router.post('/posts', async (req, res, next) => { try { const { title, body, topic = 'general' } = req.body || {}; if (!title?.trim() || !body?.trim()) return res.status(400).json({ error: 'Post title and body are required.' }); if (title.length > 180 || body.length > 5000) return res.status(400).json({ error: 'Post is longer than allowed.' }); const post = await CommunityPost.create({ author: req.user._id, title: title.trim(), body: body.trim(), topic }); await post.populate('author', 'name'); res.status(201).json({ post }); } catch (e) { next(e); } });
+router.post('/posts/:id/like', async (req, res, next) => { try { const post = await CommunityPost.findOne({ _id: req.params.id, status: 'published' }); if (!post) return res.status(404).json({ error: 'Post not found.' }); const id = req.user._id; const already = post.likes.some(x => x.equals(id)); if (already) post.likes.pull(id); else post.likes.addToSet(id); await post.save(); res.json({ liked: !already, likes: post.likes.length }); } catch (e) { next(e); } });
+export default router;

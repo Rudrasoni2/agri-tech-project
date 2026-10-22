@@ -1,0 +1,9 @@
+import { Router } from 'express';
+import Crop from '../models/Crop.js';
+import Farm from '../models/Farm.js';
+const router = Router();
+router.get('/', async (req, res, next) => { try { const filter = { owner: req.user._id }; if (req.query.farm) filter.farm = req.query.farm; if (req.query.stage) filter.stage = req.query.stage; res.json({ crops: await Crop.find(filter).populate('farm', 'name location').sort({ createdAt: -1 }) }); } catch (e) { next(e); } });
+router.post('/', async (req, res, next) => { try { const { farm, name, variety, areaAcres, stage, sowingDate, expectedHarvestDate, notes } = req.body || {}; if (!farm || !name?.trim()) return res.status(400).json({ error: 'Farm and crop name are required.' }); if (!await Farm.exists({ _id: farm, owner: req.user._id })) return res.status(404).json({ error: 'Farm not found.' }); const crop = await Crop.create({ owner: req.user._id, farm, name: name.trim(), variety, areaAcres, stage, sowingDate, expectedHarvestDate, notes }); res.status(201).json({ crop }); } catch (e) { next(e); } });
+router.patch('/:id', async (req, res, next) => { try { const allowed = ['name', 'variety', 'areaAcres', 'stage', 'sowingDate', 'expectedHarvestDate', 'notes']; const update = Object.fromEntries(Object.entries(req.body || {}).filter(([k]) => allowed.includes(k))); const crop = await Crop.findOneAndUpdate({ _id: req.params.id, owner: req.user._id }, update, { new: true, runValidators: true }); if (!crop) return res.status(404).json({ error: 'Crop not found.' }); res.json({ crop }); } catch (e) { next(e); } });
+router.delete('/:id', async (req, res, next) => { try { const crop = await Crop.findOneAndDelete({ _id: req.params.id, owner: req.user._id }); if (!crop) return res.status(404).json({ error: 'Crop not found.' }); res.json({ success: true }); } catch (e) { next(e); } });
+export default router;

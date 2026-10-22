@@ -1,0 +1,11 @@
+import { Router } from 'express';
+import Farm from '../models/Farm.js';
+import Crop from '../models/Crop.js';
+import SoilReport from '../models/SoilReport.js';
+const router = Router();
+router.get('/', async (req, res, next) => { try { res.json({ farms: await Farm.find({ owner: req.user._id }).sort({ createdAt: -1 }) }); } catch (e) { next(e); } });
+router.post('/', async (req, res, next) => { try { const { name, location, areaAcres, soilType, notes } = req.body || {}; if (!name?.trim() || !location?.trim() || !Number.isFinite(Number(areaAcres)) || Number(areaAcres) <= 0) return res.status(400).json({ error: 'Farm name, location, and a positive area are required.' }); const farm = await Farm.create({ owner: req.user._id, name: name.trim(), location: location.trim(), areaAcres: Number(areaAcres), soilType, notes }); res.status(201).json({ farm }); } catch (e) { next(e); } });
+router.get('/:id', async (req, res, next) => { try { const farm = await Farm.findOne({ _id: req.params.id, owner: req.user._id }); if (!farm) return res.status(404).json({ error: 'Farm not found.' }); res.json({ farm }); } catch (e) { next(e); } });
+router.patch('/:id', async (req, res, next) => { try { const allowed = ['name', 'location', 'areaAcres', 'soilType', 'status', 'notes']; const update = Object.fromEntries(Object.entries(req.body || {}).filter(([k]) => allowed.includes(k))); const farm = await Farm.findOneAndUpdate({ _id: req.params.id, owner: req.user._id }, update, { new: true, runValidators: true }); if (!farm) return res.status(404).json({ error: 'Farm not found.' }); res.json({ farm }); } catch (e) { next(e); } });
+router.delete('/:id', async (req, res, next) => { try { const farm = await Farm.findOneAndDelete({ _id: req.params.id, owner: req.user._id }); if (!farm) return res.status(404).json({ error: 'Farm not found.' }); await Promise.all([Crop.deleteMany({ farm: farm._id, owner: req.user._id }), SoilReport.deleteMany({ farm: farm._id, owner: req.user._id })]); res.json({ success: true }); } catch (e) { next(e); } });
+export default router;
