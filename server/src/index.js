@@ -45,10 +45,21 @@ console.log(
   'MONGODB_URI configured:',
   Boolean(process.env.MONGODB_URI)
 );
-if (process.env.MONGODB_URI) {
-  mongoose.connect(process.env.MONGODB_URI, { serverSelectionTimeoutMS: 5000 })
-    .then(() => console.log('MongoDB connected'))
-    .catch(err => console.error('MongoDB connection failed:', err.message));
+
+if (!process.env.MONGODB_URI) {
+  console.error('MongoDB connection skipped: MONGODB_URI is missing');
+} else {
+  console.log('Attempting MongoDB connection...');
+
+  mongoose.connect(process.env.MONGODB_URI, {
+    serverSelectionTimeoutMS: 10000
+  })
+    .then(() => {
+      console.log('MongoDB connected successfully');
+    })
+    .catch(err => {
+      console.error('MongoDB connection failed:', err.message);
+    });
 }
 const server = app.listen(port, () => console.log(`Agri-Tech API listening on http://localhost:${port}`));
 const shutdown = async signal => { console.log(`${signal} received; shutting down`); server.close(async () => { await mongoose.disconnect(); process.exit(0); }); };
